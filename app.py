@@ -35,7 +35,7 @@ st.markdown("""
 st.sidebar.header("⚙️ Settings")
 
 # YOUR API KEY
-api_key = st.secrets["AIzaSyALHBKRVHRMMc82-DauM3h9Ht3r4Zlc8bU"]
+api_key = st.secrets["GEMINI_API_KEY"]
 
 st.sidebar.markdown("[Get a Free Key Here](https://aistudio.google.com/app/apikey)")
 st.sidebar.info(
