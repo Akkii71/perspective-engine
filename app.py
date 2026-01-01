@@ -11,7 +11,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- Custom CSS ---
 st.markdown("""
 <style>
     .perspective-card {
@@ -20,13 +19,15 @@ st.markdown("""
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         margin-bottom: 15px;
-        border-left: 5px solid #4CAF50;
+        /* Force text color to be dark grey so it's visible on white background */
+        color: #333333; 
+        font-family: sans-serif;
     }
     .card-title {
         font-size: 1.2em;
         font-weight: bold;
         margin-bottom: 10px;
-        color: #333;
+        color: #000000; /* Force title to be solid black */
     }
 </style>
 """, unsafe_allow_html=True)
